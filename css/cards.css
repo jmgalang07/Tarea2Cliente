@@ -1,0 +1,194 @@
+:root {
+  --color-bomb-gradient-start: #464646;
+  --color-bomb-gradient-end: #b3afaf;
+  --color-defuse-gradient-start: #014801;
+  --color-defuse-gradient-end: #84cc84;
+  --color-skip-gradient-start: #1e90ff;
+  --color-skip-gradient-end: #88cee6;
+  --color-nope-gradient-start: #ff4949;
+  --color-nope-gradient-end: #fb9e9d;
+  --color-points-gradient-start: #ffffff;
+  --color-points-gradient-end: #8e8d8d;
+
+  --color-center-shadow: rgba(0, 0, 0, 0.5);
+}
+
+body {
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  flex-direction: column;
+  background-color: #f4f4f4;
+  background-image: url("../img/image.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  margin: 0;
+}
+
+p,
+h3 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  filter: drop-shadow(1.5px 1.5px 1.5px var(--color-center-shadow));
+}
+
+.container {
+  width: 340px;
+  height: 420px;
+}
+
+/*Buttons*/
+button {
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 20px;
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: blue;
+  color: white;
+}
+
+button:active {
+  background-color: greenyellow;
+  color: black;
+}
+
+/*Cards*/
+.card-points {
+  border: 4px solid black;
+  border-radius: 20px;
+  background: linear-gradient(
+    to right,
+    var(--color-points-gradient-start),
+    var(--color-points-gradient-end)
+  );
+  box-shadow: 40px 40px 100px rgba(0, 0, 0);
+}
+
+.card-bomb {
+  border: 4px solid rgb(53, 53, 53);
+  border-radius: 20px;
+  background: linear-gradient(
+    to right,
+    var(--color-bomb-gradient-start),
+    var(--color-bomb-gradient-end)
+  );
+  box-shadow: 40px 40px 200px rgb(255, 255, 255);
+}
+
+.card-defuse {
+  border: 4px solid rgb(12, 69, 2);
+  border-radius: 20px;
+  background: linear-gradient(
+    to right,
+    var(--color-defuse-gradient-start),
+    var(--color-defuse-gradient-end)
+  );
+  box-shadow: 40px 40px 200px rgb(140, 255, 0);
+}
+
+.card-nope {
+  border: 4px solid rgb(99, 7, 7);
+  border-radius: 20px;
+  background: linear-gradient(
+    to right,
+    var(--color-nope-gradient-start),
+    var(--color-nope-gradient-end)
+  );
+  box-shadow: 40px 40px 200px rgb(255, 0, 0);
+}
+
+.card-skip {
+  border: 4px solid rgb(0, 39, 169);
+  border-radius: 20px;
+  background: linear-gradient(
+    to right,
+    var(--color-skip-gradient-start),
+    var(--color-skip-gradient-end)
+  );
+  box-shadow: 40px 40px 200px rgb(0, 255, 247);
+}
+
+.card-icon {
+  width: 80px;
+  margin: 10px;
+}
+
+.card-icon-big {
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 110px;
+}
+
+.text-card {
+  display: flex;
+  justify-content: center;
+}
+
+.points {
+  margin-left: 150px;
+}
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.card-info-reverse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(180deg);
+  height: 110px;
+}
+
+.card-desc {
+  margin-top: 0px;
+  font-size: 10px;
+}
+
+/* Google Fonts Font -> PT Serif */
+.pt-serif-regular {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pt-serif-bold {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.pt-serif-regular-italic {
+  font-family: "PT Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.pt-serif-bold-italic {
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-style: italic;
+}
